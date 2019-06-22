@@ -1,8 +1,17 @@
 <html>
 <head>
 <title>عنوان صفحه</title>
+<script src='https://api.mapbox.com/mapbox-gl-js/v1.0.0/mapbox-gl.js'></script>
+<link href='https://api.mapbox.com/mapbox-gl-js/v1.0.0/mapbox-gl.css' rel='stylesheet' />
 </head>
 <body>
-هر چیزی که اینجا قرار داده شود در صفحه شما به صورت مستقیم قابل دیدن است.
+<div id='map' style='width: 400px; height: 300px;'></div>
+<script>
+  mapboxgl.accessToken = 'pk.eyJ1IjoiaW1hbnNobSIsImEiOiJjam1oZzRrN2swNTd1M3dveW9ucjB6MGtvIn0.3Yh2KCpz33disdIvfJutOA';
+  var map = new mapboxgl.Map({
+    container: 'map',
+    style: 'mapbox://styles/mapbox/streets-v11'
+  });
+</script>
 </body>
 </html>
